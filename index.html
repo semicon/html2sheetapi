@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link  href="style.css"  rel="stylesheet">
     <link  href="repeat.html" >
@@ -41,7 +41,7 @@
 
         <script>
             const api_url = 'https://sheetdb.io/api/v1/crwjmwju78jn2'
-            const form = document.getElementById('sheetdb-form');
+            let form = document.getElementById('sheetdb-form');
             form.addEventListener("submit", e => {
               e.preventDefault();
               fetch(form.action, {
