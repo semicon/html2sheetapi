@@ -9,7 +9,7 @@
     <link  href="repeat.html" >
 </head>
 <body>
-    <form action="'api_url'" method="post" id="sheetdb-form"  >
+    <form action="https://sheetdb.io/api/v1/crwjmwju78jn2" method="post" id="sheetdb-form"  >
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
@@ -40,7 +40,6 @@
 
 
         <script>
-            const api_url = 'https://sheetdb.io/api/v1/crwjmwju78jn2';
             const form = document.getElementById('sheetdb-form');
             form.addEventListener("submit", e => {
               e.preventDefault();
@@ -51,7 +50,7 @@
                   response => response.json()
               ).then((html) => {
                 // you can put any JS code here
-                window.open('repeat.html', 'top');
+                window.open('repeat.html');
 
               });
             });
